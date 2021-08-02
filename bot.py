@@ -1,5 +1,4 @@
 from telegram.ext import Updater,MessageHandler,CommandHandler,Filters
-import re 
 import  pafy 
 import os 
 BOT_TOKEN = os.environ.get("TOKEN","")
