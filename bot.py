@@ -11,7 +11,7 @@ def echo(updater,context):
  link = updater.message.text
  video = pafy.new(link) 
  id  = video.videoid
- thumb = f"https://i.youtube.com/vi/{id}/sddefault.jpg"
+ thumb = f"https://i.ytimg.com/vi/{id}/maxresdefault.jpg"
  context.bot.send_photo(updater.message.chat.id,thumb,reply_to_message_id =updater.message.message_id)
   
 dp =updater.dispatcher.add_handler
