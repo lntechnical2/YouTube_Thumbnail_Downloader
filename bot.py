@@ -11,7 +11,7 @@ def echo(updater,context):
  link = updater.message.text
  s = updater.message.reply_text('🧑‍💻🧑‍💻🧑‍💻')
  yt = Data("https://youtu.be/HhHzCfrqsoE")
- thumb = yt.thumbnails
+ thumb = yt.thumb()
  
  context.bot.send_photo(updater.message.chat.id,thumb,reply_to_message_id =updater.message.message_id)
  s.delete()
