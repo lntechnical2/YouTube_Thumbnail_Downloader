@@ -1,4 +1,4 @@
-from pyyoutube import Data
+from py_youtube import Data
 from telegram.ext import Updater,MessageHandler,CommandHandler,Filters
 import os 
 BOT_TOKEN = os.environ.get("TOKEN","")
